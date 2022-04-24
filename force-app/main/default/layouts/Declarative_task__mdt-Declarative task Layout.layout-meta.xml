@@ -39,7 +39,7 @@
         <layoutColumns>
             <layoutItems>
                 <behavior>Required</behavior>
-                <field>assign_to__c</field>
+                <field>OwnerId__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>
