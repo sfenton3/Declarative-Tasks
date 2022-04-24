@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>objectAPIName__c</fullName>
+    <externalId>false</externalId>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>objectAPIName</label>
+    <referenceTo>EntityDefinition</referenceTo>
+    <relationshipLabel>Declarative_tasks</relationshipLabel>
+    <relationshipName>Declarative_tasks</relationshipName>
+    <required>true</required>
+    <type>MetadataRelationship</type>
+    <unique>true</unique>
+</CustomField>

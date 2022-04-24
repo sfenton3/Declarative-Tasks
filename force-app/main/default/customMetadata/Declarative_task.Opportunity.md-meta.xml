@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Opportunity</label>
+    <protected>false</protected>
+    <values>
+        <field>Priority__c</field>
+        <value xsi:type="xsd:string">high</value>
+    </values>
+    <values>
+        <field>Status__c</field>
+        <value xsi:type="xsd:string">In Progress</value>
+    </values>
+    <values>
+        <field>assign_to__c</field>
+        <value xsi:type="xsd:string">0058c000007MnFFAA0</value>
+    </values>
+    <values>
+        <field>objectAPIName1__c</field>
+        <value xsi:type="xsd:string">Opportunity</value>
+    </values>
+    <values>
+        <field>objectAPIName__c</field>
+        <value xsi:type="xsd:string">Opportunity</value>
+    </values>
+    <values>
+        <field>subject__c</field>
+        <value xsi:type="xsd:string">OpportunityTest</value>
+    </values>
+</CustomMetadata>

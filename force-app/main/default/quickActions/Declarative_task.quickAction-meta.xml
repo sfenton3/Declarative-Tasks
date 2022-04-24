@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Generates a task based on logic in Declarative_task__mdt object</description>
+    <height>250</height>
+    <label>Declarative task</label>
+    <optionsCreateFeedItem>false</optionsCreateFeedItem>
+    <page>CreateCase</page>
+    <type>VisualforcePage</type>
+    <width>-100</width>
+</QuickAction>

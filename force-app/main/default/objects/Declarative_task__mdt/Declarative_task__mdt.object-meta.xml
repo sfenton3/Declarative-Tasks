@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Setup records to define requirements for task creation of all standard objects.</description>
+    <label>Declarative task</label>
+    <pluralLabel>Declarative tasks</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>
