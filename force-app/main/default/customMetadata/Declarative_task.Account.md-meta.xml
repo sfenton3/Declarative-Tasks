@@ -3,6 +3,30 @@
     <label>Account Button</label>
     <protected>false</protected>
     <values>
+        <field>ActivityDate__c</field>
+        <value xsi:type="xsd:date">2022-04-30</value>
+    </values>
+    <values>
+        <field>CallDisposition__c</field>
+        <value xsi:type="xsd:string">Test</value>
+    </values>
+    <values>
+        <field>CallObject__c</field>
+        <value xsi:type="xsd:string">?</value>
+    </values>
+    <values>
+        <field>Description__c</field>
+        <value xsi:type="xsd:string">Test description...</value>
+    </values>
+    <values>
+        <field>IsReminderSet__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>OwnerId__c</field>
+        <value xsi:type="xsd:string">user...</value>
+    </values>
+    <values>
         <field>Priority__c</field>
         <value xsi:type="xsd:string">high</value>
     </values>
@@ -11,12 +35,16 @@
         <value xsi:type="xsd:string">In Progress</value>
     </values>
     <values>
-        <field>assign_to__c</field>
-        <value xsi:type="xsd:string">user...</value>
+        <field>Type__c</field>
+        <value xsi:type="xsd:string">Call</value>
+    </values>
+    <values>
+        <field>WhoId__c</field>
+        <value xsi:nil="true"/>
     </values>
     <values>
         <field>isActive__c</field>
-        <value xsi:type="xsd:boolean">false</value>
+        <value xsi:type="xsd:boolean">true</value>
     </values>
     <values>
         <field>objectAPIName__c</field>

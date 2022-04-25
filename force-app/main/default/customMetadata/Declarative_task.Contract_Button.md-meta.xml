@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <label>Opportunity Button</label>
+    <label>Contract Button</label>
     <protected>false</protected>
     <values>
         <field>ActivityDate__c</field>
@@ -8,7 +8,7 @@
     </values>
     <values>
         <field>CallDisposition__c</field>
-        <value xsi:nil="true"/>
+        <value xsi:type="xsd:string">csascsasc</value>
     </values>
     <values>
         <field>CallObject__c</field>
@@ -16,7 +16,7 @@
     </values>
     <values>
         <field>Description__c</field>
-        <value xsi:nil="true"/>
+        <value xsi:type="xsd:string">ascacsacacsac</value>
     </values>
     <values>
         <field>IsReminderSet__c</field>
@@ -24,7 +24,7 @@
     </values>
     <values>
         <field>OwnerId__c</field>
-        <value xsi:type="xsd:string">123</value>
+        <value xsi:type="xsd:string">user...</value>
     </values>
     <values>
         <field>Priority__c</field>
@@ -48,10 +48,10 @@
     </values>
     <values>
         <field>objectAPIName__c</field>
-        <value xsi:type="xsd:string">Opportunity</value>
+        <value xsi:type="xsd:string">Contract</value>
     </values>
     <values>
         <field>subject__c</field>
-        <value xsi:type="xsd:string">OpportunityTest</value>
+        <value xsi:type="xsd:string">ContractTest</value>
     </values>
 </CustomMetadata>
