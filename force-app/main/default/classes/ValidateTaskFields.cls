@@ -1,44 +1,29 @@
-//2 static utility methods
-//2 helper methods
-//1 public driver method
 public with sharing class ValidateTaskFields {
 
-
-    @SuppressWarnings('pmd')
     public static void generateTask(){
         Sobject currentRecord = getCurrentRecord();
-        Sobject taskBlueprint = getTask();
-        Set<String> fieldList = getFieldList();
-        fieldList = validate(fieldList);
+        Sobject dt = getDeclarativeTaskRecord();
+        List<String> fieldList = getDeclarativeTaskFields();
         Task t = new Task();
 
+        //do I ever query standard fields on cmt?
+        //label needs to correspond to task api name 1:1
         for (String fieldname : fieldList) {
-            system.debug(fieldname);
-            //if fieldname is durationinseconds Integer.valueof(decimal)...salesforce strikes again lul
-            t.put(trimFieldName(fieldname), taskBlueprint.get(fieldname));
+            if (isValidField(fieldname) && isCreatable(fieldname)){
+                t.put(fieldname, dt.get(fieldname + '__c'));
+            }
         }
 
         //Related info. 
+       // User u = [select id from user where id = :]
         t.OwnerId = UserInfo.getUserId();
         t.WhatId = currentRecord.Id;
         insert t;
-
     }
 
-    //trim __c from fieldname to correspond to standard fields on task object
-    public static String trimFieldName(String fieldname){
-        return fieldname.substringBefore('__c');
-    }
 
-    //remove fields that cannot be mapped to the task object
-    public static Set<String> validate(Set<String> fieldList){
-        List<String> elementsToRemove = new List<String>{'objectapiname__c','developername', 'masterlabel', 'language', 'namespaceprefix', 'label', 'qualifiedapiname', 'isactive__c', 'id'};
-        fieldList.removeAll(elementsToRemove);
-        return fieldList;
-    }
-
-    @suppressWarnings('pmd')
-    public static Sobject getTask(){
+    //Custom Metadata type record
+    public static Sobject getDeclarativeTaskRecord(){
         ID recordId =(Id) ApexPages.currentPage().getParameters().get('id');
         String objectAPIName = recordId.getSObjectType().getDescribe().getName();
 
@@ -49,7 +34,7 @@ public with sharing class ValidateTaskFields {
         return Database.query(query)[0];
     }
 
-    @suppressWarnings('pmd')
+    //Record as according to button page
     public static Sobject getCurrentRecord(){
         ID recordId =(Id) ApexPages.currentPage().getParameters().get('id');
         String objectAPIName = recordId.getSObjectType().getDescribe().getName();
@@ -57,7 +42,7 @@ public with sharing class ValidateTaskFields {
         return Database.query(query)[0];
     }
 
-    //Utility method to dynamically get all fields on Custom Metadata Type for select statement
+    //Helper method for querying cmt. 
     public static String getFieldString(){
         declarative_task__mdt dtm = new declarative_task__mdt();
         Sobjecttype dtmtype = dtm.getSObjectType();
@@ -71,15 +56,45 @@ public with sharing class ValidateTaskFields {
 
         return dynamicQuery;
     }
-    
-    //Utility method to dynamically get all fields on custom metadata type for list
-    public static set<String> getFieldList(){
+
+    //helper method for returning all fields on cmt
+    public static List<String> getDeclarativeTaskFields(){
         declarative_task__mdt dtm = new declarative_task__mdt();
         Sobjecttype dtmtype = dtm.getSObjectType();
         Map<String,Schema.SObjectField> mfields = dtmtype.getDescribe().fields.getMap();
+        List<String> dtfields = new List<String>();
 
-        System.debug(mfields.keySet());
-
-        return mfields.keySet();
+        for(SObjectField token : mfields.values()){
+            dtfields.add(token.getDescribe().getLabel());
+        }
+        return dtfields;
     }
+    
+    //Utility method for verifying if field excists on object
+    public static boolean isValidField(String fieldname){
+        Task t = new Task();
+        Map<String, Schema.SObjectField> dfsMap = t.getSObjectType().getDescribe().fields.getMap();
+
+        //null pointer exception check
+        if (dfsMap.get(fieldname) == null){
+            return false;
+        }
+
+        return true;
+    }
+
+    //Utility method to verify if field is creatable on object
+    public static boolean isCreatable(String fieldname){
+        Task t = new Task();
+        Map<String, Schema.SObjectField> dfsMap = t.getSObjectType().getDescribe().fields.getMap();
+
+        //null pointer exception check
+        if (dfsMap.get(fieldname) == null){
+            return false;
+        }
+
+        Schema.DescribeFieldResult dfr = dfsMap.get(fieldname).getDescribe();
+        return dfr.isCreateable();
+    }
+
 }
