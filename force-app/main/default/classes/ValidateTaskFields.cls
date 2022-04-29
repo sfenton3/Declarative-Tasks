@@ -97,4 +97,13 @@ public with sharing class ValidateTaskFields {
         return dfr.isCreateable();
     }
 
+    public static boolean isActive(){
+        ID recordId =(Id) ApexPages.currentPage().getParameters().get('id');
+        String label = recordId.getSobjectType().getDescribe().getLabel();
+        declarative_task__mdt dtm = [select isActive__c from declarative_task__mdt where objectAPIName__c = :label];
+
+        return dtm.isActive__c;
+
+    }
+
 }
