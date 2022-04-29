@@ -1,15 +1,18 @@
 # Declarative Tasks
  Create Custom tasks per sobject and generate with a global action
 
- Support for two Sobjects: Account, Opportunity, Contract, Order
- Support for most standard fields on task object
+ Support for all WhatID objects on Task.
+ Support for all writeable standard fields. Except callduration
+ Support for custom fields - Instructions below.
+
+ Lookup fields for whoid, and ownerid not supported yet.
+ 
 
  TODO: 
 
- 1. Verify and test all standard fields
- 2. Add support for all lookup objects in whatid
- 3. Create success/error in controller/VF Page
- 4. Test
+ 1. Verify and test all standard fields - Test insert against all supported sobject record types 
+ 2. Create success/error in controller/VF Page
+ 3. Create Documentation on 
 
  How to use:
 
