@@ -30,6 +30,346 @@
                 <default>false</default>
                 <label>Order</label>
             </value>
+            <value>
+                <fullName>Campaign</fullName>
+                <default>false</default>
+                <label>Campaign</label>
+            </value>
+            <value>
+                <fullName>Product</fullName>
+                <default>false</default>
+                <label>Product</label>
+            </value>
+            <value>
+                <fullName>Asset</fullName>
+                <default>false</default>
+                <label>Asset</label>
+            </value>
+            <value>
+                <fullName>Case</fullName>
+                <default>false</default>
+                <label>Case</label>
+            </value>
+            <value>
+                <fullName>Solution</fullName>
+                <default>false</default>
+                <label>Solution</label>
+            </value>
+            <value>
+                <fullName>Invoice</fullName>
+                <default>false</default>
+                <label>Invoice</label>
+            </value>
+            <value>
+                <fullName>Work Order</fullName>
+                <default>false</default>
+                <label>Work Order</label>
+            </value>
+            <value>
+                <fullName>Work Order Line Item</fullName>
+                <default>false</default>
+                <label>Work Order Line Item</label>
+            </value>
+            <value>
+                <fullName>Service Appointment</fullName>
+                <default>false</default>
+                <label>Service Appointment</label>
+            </value>
+            <value>
+                <fullName>Service Resource</fullName>
+                <default>false</default>
+                <label>Service Resource</label>
+            </value>
+            <value>
+                <fullName>Assigned Resource</fullName>
+                <default>false</default>
+                <label>Assigned Resource</label>
+            </value>
+            <value>
+                <fullName>Resource Absence</fullName>
+                <default>false</default>
+                <label>Resource Absence</label>
+            </value>
+            <value>
+                <fullName>Product Item</fullName>
+                <default>false</default>
+                <label>Product Item</label>
+            </value>
+            <value>
+                <fullName>Product Consumed</fullName>
+                <default>false</default>
+                <label>Product Consumed</label>
+            </value>
+            <value>
+                <fullName>Entitlement</fullName>
+                <default>false</default>
+                <label>Entitlement</label>
+            </value>
+            <value>
+                <fullName>Service Contract</fullName>
+                <default>false</default>
+                <label>Service Contract</label>
+            </value>
+            <value>
+                <fullName>Contract Line Item</fullName>
+                <default>false</default>
+                <label>Contract Line Item</label>
+            </value>
+            <value>
+                <fullName>Location</fullName>
+                <default>false</default>
+                <label>Location</label>
+            </value>
+            <value>
+                <fullName>Coaching</fullName>
+                <default>false</default>
+                <label>Coaching</label>
+            </value>
+            <value>
+                <fullName>Goal</fullName>
+                <default>false</default>
+                <label>Goal</label>
+            </value>
+            <value>
+                <fullName>Metric</fullName>
+                <default>false</default>
+                <label>Metric</label>
+            </value>
+            <value>
+                <fullName>Maintenance Plan</fullName>
+                <default>false</default>
+                <label>Maintenance Plan</label>
+            </value>
+            <value>
+                <fullName>Maintenance Asset</fullName>
+                <default>false</default>
+                <label>Maintenance Asset</label>
+            </value>
+            <value>
+                <fullName>Product Request</fullName>
+                <default>false</default>
+                <label>Product Request</label>
+            </value>
+            <value>
+                <fullName>Product Transfer</fullName>
+                <default>false</default>
+                <label>Product Transfer</label>
+            </value>
+            <value>
+                <fullName>Product Request Line Item</fullName>
+                <default>false</default>
+                <label>Product Request Line Item</label>
+            </value>
+            <value>
+                <fullName>Shipment</fullName>
+                <default>false</default>
+                <label>Shipment</label>
+            </value>
+            <value>
+                <fullName>Time Sheet</fullName>
+                <default>false</default>
+                <label>Time Sheet</label>
+            </value>
+            <value>
+                <fullName>Asset Relationship</fullName>
+                <default>false</default>
+                <label>Asset Relationship</label>
+            </value>
+            <value>
+                <fullName>Time Sheet Entry</fullName>
+                <default>false</default>
+                <label>Time Sheet Entry</label>
+            </value>
+            <value>
+                <fullName>Service Crew</fullName>
+                <default>false</default>
+                <label>Service Crew</label>
+            </value>
+            <value>
+                <fullName>Service Crew Member</fullName>
+                <default>false</default>
+                <label>Service Crew Member</label>
+            </value>
+            <value>
+                <fullName>List Email</fullName>
+                <default>false</default>
+                <label>List Email</label>
+            </value>
+            <value>
+                <fullName>Return Order</fullName>
+                <default>false</default>
+                <label>Return Order</label>
+            </value>
+            <value>
+                <fullName>Return Order Line Item</fullName>
+                <default>false</default>
+                <label>Return Order Line Item</label>
+            </value>
+            <value>
+                <fullName>Contact Request</fullName>
+                <default>false</default>
+                <label>Contact Request</label>
+            </value>
+            <value>
+                <fullName>Image</fullName>
+                <default>false</default>
+                <label>Image</label>
+            </value>
+            <value>
+                <fullName>Shift</fullName>
+                <default>false</default>
+                <label>Shift</label>
+            </value>
+            <value>
+                <fullName>Credit Memo</fullName>
+                <default>false</default>
+                <label>Credit Memo</label>
+            </value>
+            <value>
+                <fullName>Communication Subscription Consent</fullName>
+                <default>false</default>
+                <label>Communication Subscription Consent</label>
+            </value>
+            <value>
+                <fullName>Legal Entity</fullName>
+                <default>false</default>
+                <label>Legal Entity</label>
+            </value>
+            <value>
+                <fullName>Party Consent</fullName>
+                <default>false</default>
+                <label>Party Consent</label>
+            </value>
+            <value>
+                <fullName>Expense</fullName>
+                <default>false</default>
+                <label>Expense</label>
+            </value>
+            <value>
+                <fullName>Work Plan</fullName>
+                <default>false</default>
+                <label>Work Plan</label>
+            </value>
+            <value>
+                <fullName>Work Plan Selection Rule</fullName>
+                <default>false</default>
+                <label>Work Plan Selection Rule</label>
+            </value>
+            <value>
+                <fullName>Work Plan Template</fullName>
+                <default>false</default>
+                <label>Work Plan Template</label>
+            </value>
+            <value>
+                <fullName>Work Plan Template Entry</fullName>
+                <default>false</default>
+                <label>Work Plan Template Entry</label>
+            </value>
+            <value>
+                <fullName>Work Step</fullName>
+                <default>false</default>
+                <label>Work Step</label>
+            </value>
+            <value>
+                <fullName>Work Step Template</fullName>
+                <default>false</default>
+                <label>Work Step Template</label>
+            </value>
+            <value>
+                <fullName>Asset Warranty</fullName>
+                <default>false</default>
+                <label>Asset Warranty</label>
+            </value>
+            <value>
+                <fullName>Expense Report</fullName>
+                <default>false</default>
+                <label>Expense Report</label>
+            </value>
+            <value>
+                <fullName>Expense Report Entry</fullName>
+                <default>false</default>
+                <label>Expense Report Entry</label>
+            </value>
+            <value>
+                <fullName>Process Exception</fullName>
+                <default>false</default>
+                <label>Process Exception</label>
+            </value>
+            <value>
+                <fullName>Product Service Campaign</fullName>
+                <default>false</default>
+                <label>Product Service Campaign</label>
+            </value>
+            <value>
+                <fullName>Shift Pattern</fullName>
+                <default>false</default>
+                <label>Shift Pattern</label>
+            </value>
+            <value>
+                <fullName>Shift Pattern Entry</fullName>
+                <default>false</default>
+                <label>Shift Pattern Entry</label>
+            </value>
+            <value>
+                <fullName>Warranty Term</fullName>
+                <default>false</default>
+                <label>Warranty Term</label>
+            </value>
+            <value>
+                <fullName>Appointment Bundle Aggregation Duration Downscale</fullName>
+                <default>false</default>
+                <label>Appointment Bundle Aggregation Duration Downscale</label>
+            </value>
+            <value>
+                <fullName>Appointment Bundle Aggregation Policy</fullName>
+                <default>false</default>
+                <label>Appointment Bundle Aggregation Policy</label>
+            </value>
+            <value>
+                <fullName>Appointment Bundle Config</fullName>
+                <default>false</default>
+                <label>Appointment Bundle Config</label>
+            </value>
+            <value>
+                <fullName>Appointment Bundle Policy</fullName>
+                <default>false</default>
+                <label>Appointment Bundle Policy</label>
+            </value>
+            <value>
+                <fullName>Appointment Bundle Policy Service Territory</fullName>
+                <default>false</default>
+                <label>Appointment Bundle Policy Service Territory</label>
+            </value>
+            <value>
+                <fullName>Appointment Bundle Propagation Policy</fullName>
+                <default>false</default>
+                <label>Appointment Bundle Propagation Policy</label>
+            </value>
+            <value>
+                <fullName>Appointment Bundle Restriction Policy</fullName>
+                <default>false</default>
+                <label>Appointment Bundle Restriction Policy</label>
+            </value>
+            <value>
+                <fullName>Appointment Bundle Sort Policy</fullName>
+                <default>false</default>
+                <label>Appointment Bundle Sort Policy</label>
+            </value>
+            <value>
+                <fullName>Product Service Campaign Item</fullName>
+                <default>false</default>
+                <label>Product Service Campaign Item</label>
+            </value>
+            <value>
+                <fullName>Shipment Item</fullName>
+                <default>false</default>
+                <label>Shipment Item</label>
+            </value>
+            <value>
+                <fullName>Travel Mode</fullName>
+                <default>false</default>
+                <label>Travel Mode</label>
+            </value>
         </valueSetDefinition>
     </valueSet>
 </CustomField>
