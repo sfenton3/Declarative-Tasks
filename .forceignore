@@ -10,3 +10,10 @@ package.xml
 
 # LWC Jest
 **/__tests__/**
+
+# Explicilty list the HelloWorld source files to be excluded
+helloWorld/main/default/HelloWorld.cls
+helloWorld/main/default/HelloWorld.cls-meta.xml
+
+# Exclude the HelloWorld Apex class using an asterisk
+helloWorld/main/default/HelloWorld.cls*
