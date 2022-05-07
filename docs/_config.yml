@@ -1,14 +1,10 @@
+# Remote Theme
 remote_theme: just-the-docs/just-the-docs
-####
 
 # Site Settings
 title: "Declarative Tasks"
 description: "User Documentation for repo"
 
+# Search Functionality
 search_enabled: false
 
-
-
-# Informational
-#color_scheme: "dark"
-#baseurl: "/dt" # the subpath of your site, e.g. /blog
