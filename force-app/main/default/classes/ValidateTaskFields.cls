@@ -1,5 +1,7 @@
 public with sharing class ValidateTaskFields {
 
+    
+
     public static void generateTask(){
         Sobject currentRecord = getCurrentRecord();
         Sobject dt = getDeclarativeTaskRecord();
