@@ -1,7 +1,6 @@
 public with sharing class ValidateTaskFields {
 
-    
-
+    //procedural method
     public static void generateTask(){
         Sobject currentRecord = getCurrentRecord();
         Sobject dt = getDeclarativeTaskRecord();
@@ -16,8 +15,10 @@ public with sharing class ValidateTaskFields {
             }
         }
 
-        //Related info. 
-       // User u = [select id from user where id = :]
+        //Grab userid from session context(default) or as recordid from mdt
+        //grab whatid from current record(default) or recordid from mdt
+       //getDeclarativeTaskRecord().userid == null ? userinfo.getuserid() : getDeclarativeTaskRecord().userid
+       //
         t.OwnerId = UserInfo.getUserId();
         t.WhatId = currentRecord.Id;
         insert t;
