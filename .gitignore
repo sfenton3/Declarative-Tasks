@@ -1,4 +1,5 @@
 # Salesforce DX and LWC local dev server cache
+.sf/
 .sfdx/
 .test/
 .localdevserver/
