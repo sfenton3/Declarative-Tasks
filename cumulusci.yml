@@ -22,4 +22,9 @@ tasks:
 
     run_tests:
         options:
-            required_org_code_coverage_percent: 75
+            required_org_code_coverage_percent: 80
+
+    deploy_dev_config:
+        group: "xyz"
+
+
