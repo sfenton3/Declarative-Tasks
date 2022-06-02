@@ -10,9 +10,8 @@
 
  TODO: 
 
- 1. Verify and test all standard fields - Test insert against all supported sobject record types 
+ 1. Verify and test all standard fields - test insert against all supported sobject record types 
  2. Create success/error in controller/VF Page
- 3. Create Documentation on 
 
  How to use:
 
