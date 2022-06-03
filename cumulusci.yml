@@ -3,12 +3,14 @@ project:
     name: Declarative-Tasks
     package:
         name: Declarative-Tasks
+        namespace: dtsf2022
         api_version: '54.0'
     git:
         default_branch: 'main'
     source_format: sfdx
 
 tasks:
+
     robot:
         options:
             suites: robot/Declarative-Tasks/tests
