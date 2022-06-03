@@ -24,7 +24,21 @@ tasks:
         options:
             required_org_code_coverage_percent: 80
 
-    deploy_dev_config:
-        group: "xyz"
+    deploy_reports:
+        description: Deploy Reports
+        class_path: cumulusci.tasks.salesforce.Deploy
+        group: DECLARATIVE_TASKS
+        options:
+            path: unpackaged/config/reports
 
-
+flows:
+    greet_and_sleep:
+        group: Declarative_tasks
+        description: Greetsthe user and then sleeps for 5 seconds.
+        steps:
+            1:
+                task: command
+                options:
+                    command: echo 'Hello there!'
+            2:
+                task: util_sleep
